@@ -1,13 +1,12 @@
 [Unit]
 Description=LibreX: A privacy respecting free as in freedom meta search engine
-After=syslog.target
-After=network.target
+After=syslog.target network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=_FINALPATH__/
+WorkingDirectory=__FINALPATH__/
 ExecStart=__FINALPATH__/auto_updater.sh
 Restart=always
 RestartSec=10s
